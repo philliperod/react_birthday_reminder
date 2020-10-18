@@ -6,7 +6,12 @@ function App() {
   return (
     <section className="container">
       <h3>Birthday Reminder Project</h3>
-      <List />
+      <section className="person">
+        {data.map((listing) => {
+          return <List key={data.id} {...listing} />;
+        })}
+      </section>
+
       <button
         onClick={() => {
           console.log('it works');
