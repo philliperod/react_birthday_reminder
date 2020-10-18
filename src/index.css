@@ -157,13 +157,14 @@ main {
 .person {
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 0.75rem;
+  column-gap: 1rem;
   margin-bottom: 1.5rem;
   align-items: center;
 }
 .person img {
   width: 75px;
   height: 75px;
+  margin: 10px 0;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: var(--light-shadow);

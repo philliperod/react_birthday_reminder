@@ -3,10 +3,11 @@ import React from 'react';
 const List = ({ image, name, age }) => {
   return (
     <>
-      <h2>Names</h2>
-      <img src={image} alt="" />
-      <h3>{name}</h3>
-      <h4>Age: {age}</h4>
+      <img src={image} alt={name} />
+      <div>
+        <h4>{name}</h4>
+        <p>Age: {age}</p>
+      </div>
     </>
   );
 };
