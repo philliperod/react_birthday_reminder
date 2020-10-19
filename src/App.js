@@ -8,9 +8,7 @@ function App() {
     <main>
       <section className="container">
         <h3>{people.length} Birthdays Today</h3>
-        <section className="person">
-          <List people={people} />
-        </section>
+        <List people={people} />
         <button onClick={() => setPeople([])}>Clear All</button>
       </section>
     </main>
